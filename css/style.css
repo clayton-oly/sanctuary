@@ -19,14 +19,15 @@
 /* REM */
 html {
     font-size: 20px;
+    scroll-behavior: smooth;
 }
 
 /* EM */
 body {
     font-size: 15px;
     /* background: var(--clr-default); */
-    background-color: #000000;
-    overflow: hidden;
+    background-color: #022dee;
+    /* overflow: hidden; */
 }
 
 /* sizes */
@@ -111,7 +112,7 @@ section {
     }
 }
 
-/* .lightMode {
+.lightMode {
     --clr-default: #cbcbcb;
     --clr-base: #e0e0e0;
     --clr-text: #181818;
@@ -121,13 +122,15 @@ section {
     --clr-no-color: transparent;
     --clr-shadow: #a0a0a0;
     --clr-black: #000000;
+
     & #logo {
-      filter: invert(1);
+        filter: invert(1);
     }
+
     & #mapa {
-      filter: invert(0);
+        filter: invert(0);
     }
-  } */
+}
 
 /* #region */
 /* nav */
@@ -304,5 +307,99 @@ nav {
         }
     }
 }
+
+/*#endregion*/
+
+/*#region home */
+
+section#home {
+    & .homeContainer {
+        & .changeMode {
+            position: fixed;
+            top: 2em;
+            z-index: 100;
+            right: 2em;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            background: var(--clr-accent);
+            width: 2rem;
+            height: 2rem;
+            border-radius: 10px;
+            cursor: pointer;
+
+            & button {
+                cursor: pointer;
+                background: var(--clr-no-color);
+                border: none;
+
+                &#darkMode {
+                    display: none;
+                }
+
+                & i {
+                    font-size: var(--txt-paragraph);
+                }
+            }
+        }
+
+        & video {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+        }
+
+        & .homeInner {
+            width: calc(100% - 5em);
+            height: 100vh;
+            background: var(--clr-accent-bg);
+            position: absolute;
+            top: 0;
+            padding: 5em;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+
+            & h1 {
+                font-size: var(--txt-super-hero);
+            }
+
+            & h2 {
+                margin: 1rem 0;
+            }
+
+            & p {
+                width: 30%;
+                margin-bottom: 2em;
+            }
+        }
+    }
+}
+
+/*#endregion*/
+
+/*#region team */
+#team {
+    & .teamContainer {
+        background: var(--clr-base);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        & ul.teamCard {
+            & li {
+                & img {}
+
+                & i {}
+
+                & p {}
+            }
+        }
+    }
+}
+
 
 /*#endregion*/

@@ -66,12 +66,95 @@
   <main>
     <div class="container">
       <section id="home">
-        <div class="homeContainer"></div>
+        <div class="homeContainer">
+
+          <!-- .changeMode>button#*2>i|c -->
+          <div class="changeMode">
+            <button id="lightMode">
+              <i class="fa-solid fa-sun"></i>
+            </button><!-- / -->
+            <button id="darkMode">
+              <i class="fa-solid fa-moon"></i>
+            </button>
+            <!-- / -->
+          </div>
+          <!-- /.changeMode -->
+
+          <!-- video#+.homeInner>(h1>span^h2>span^p+a.btnDefault)|c -->
+          <video src="./video/candy.mp4" id="video" muted></video>
+          <!-- / -->
+          <div class="homeInner">
+            <h1>Strange<span>Sanctuary</span>Candies</h1>
+            <h2>Como and<span>fill yourself</span>with strange candies</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto blanditiis ipsum ipsam omnis hic qui
+              asperiores ullam necessitatibus? Ea, neque.
+            </p>
+            <a href="#contact" class="btnDefault">Contact us</a>
+            <!-- /.btnDefault -->
+          </div>
+          <!-- /.homeInner -->
+        </div>
         <!-- /.homeContainer -->
       </section>
       <!-- /#home -->
       <section id="team">
-        <div class="teamContainer"></div>
+        <div class="teamContainer">
+
+          <!-- ul.teamCard*4>li>img^li>p{nome}^li>i*5|c -->
+          <ul class="teamCard">
+            <li><img src="./img/card1.webp" alt="team"></li>
+            <li>
+              <p>Billy</p>
+            </li>
+            <li>
+              <i class="bx bxl-facebook-circle"></i>
+              <i class="bx bxl-instagram"></i>
+              <i class="bx bxl-tiktok"></i>
+              <i class="bx bxl-linkedin-square"></i>
+            </li>
+          </ul>
+          <!-- /.teamCard -->
+          <ul class="teamCard">
+            <li><img src="./img/card2.webp" alt="team"></li>
+            <li>
+              <p>Mel</p>
+            </li>
+            <li>
+              <i class="bx bxl-facebook-circle"></i>
+              <i class="bx bxl-instagram"></i>
+              <i class="bx bxl-tiktok"></i>
+              <i class="bx bxl-linkedin-square"></i>
+            </li>
+          </ul>
+          <!-- /.teamCard -->
+          <ul class="teamCard">
+            <li><img src="./img/card3.webp" alt="team"></li>
+            <li>
+              <p>Otavio</p>
+            </li>
+            <li>
+              <i class="bx bxl-facebook-circle"></i>
+              <i class="bx bxl-instagram"></i>
+              <i class="bx bxl-tiktok"></i>
+              <i class="bx bxl-linkedin-square"></i>
+            </li>
+          </ul>
+          <!-- /.teamCard -->
+          <ul class="teamCard">
+            <li><img src="./img/card4.webp" alt="team"></li>
+            <li>
+              <p>Ze Maria</p>
+            </li>
+            <li>
+              <i class="bx bxl-facebook-circle"></i>
+              <i class="bx bxl-instagram"></i>
+              <i class="bx bxl-tiktok"></i>
+              <i class="bx bxl-linkedin-square"></i>
+            </li>
+          </ul>
+          <!-- /.teamCard -->
+        </div>
         <!-- /.teamContainer -->
       </section>
       <!-- /#team -->
@@ -104,7 +187,7 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js
     "></script>
   <!-- aos -->
-  <script src=""></script>
+  <script src="./js/script.js"></script>
   <!-- myScript -->
 </body>
 
