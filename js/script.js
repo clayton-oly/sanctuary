@@ -26,3 +26,55 @@ btnEscuro.addEventListener('click', () => {
     btnClaro.style.display = "inline";
 });
 
+//active
+document.querySelectorAll('.navLink li').forEach((item) => {
+    item.addEventListener('click', function () {
+        // remove a classe active de todos os itens
+        document.querySelectorAll('navLink li').forEach((li) => {
+            li.classList.remove('active');
+        });
+
+        //adiciona a classe active ao item classe
+        this.classList.add('active');
+    });
+});
+
+//escondendo o span
+document.addEventListener("DOMContentLoaded", function () {
+    const navBar = document.querySelector(".navBar");
+    const spans = document.querySelectorAll(".navLink li a span");
+
+    function toggleSpanVisibility() {
+        if (navBar.offsetWidth > 4 * 16) {
+            spans.forEach((span) => {
+                span.style.opacity = "0";
+                span.style.opacity = "visible";
+            });
+        }
+        else {
+            spans.forEach((span) => {
+                span.style.opacity = "1";
+                span.style.opacity = "hidden";
+            });
+        }
+    }
+
+    toggleSpanVisibility();
+
+    navBar.addEventListener("mouseenter", () => {
+        spans.forEach((span) => {
+            span.style.opacity = "1";
+            span.style.opacity = "visible";
+        });
+    });
+
+    navBar.addEventListener("mouseleave", () => {
+        spans.forEach((span) => {
+            span.style.opacity = "0";
+            span.style.opacity = "hidden";
+        });
+    });
+});
+
+
+
